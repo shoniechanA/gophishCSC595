@@ -224,6 +224,72 @@ function edit(idx) {
     })
 }
 
+function edit2(idx) {
+    // $("#modalSubmit").unbind('click').click(function () {
+    //     save(idx)
+    // })
+    // $("#attachmentUpload").unbind('click').click(function () {
+    //     this.value = null
+    // })
+
+    // $("#html_editor").ckeditor()
+    // setupAutocomplete(CKEDITOR.instances["html_editor"])
+    // $("#attachmentsTable").show()
+    
+    // attachmentsTable = $('#attachmentsTable').DataTable({
+    //     destroy: true,
+    //     "order": [
+    //         [1, "asc"]
+    //     ],
+    //     columnDefs: [{
+    //         orderable: false,
+    //         targets: "no-sort"
+    //     }, {
+    //         sClass: "datatable_hidden",
+    //         targets: [3, 4]
+    //     }]
+    // });
+    // var template = {
+    //     attachments: []
+    // }
+    // if (idx != -1) {
+    //     $("#templateModalLabel").text("Edit Template")
+    //     template = templates[idx]
+    //     $("#name").val(template.name)
+    //     $("#subject").val(template.subject)
+    //     $("#envelope-sender").val(template.envelope_sender)
+    //     $("#html_editor").val(template.html)
+    //     $("#text_editor").val(template.text)
+    //     attachmentRows = []
+    //     $.each(template.attachments, function (i, file) {
+    //         var icon = icons[file.type] || "fa-file-o"
+    //         // Add the record to the modal
+    //         attachmentRows.push([
+    //             '<i class="fa ' + icon + '"></i>',
+    //             escapeHtml(file.name),
+    //             '<span class="remove-row"><i class="fa fa-trash-o"></i></span>',
+    //             file.content,
+    //             file.type || "application/octet-stream"
+    //         ])
+    //     })
+    //     attachmentsTable.rows.add(attachmentRows).draw()
+    //     if (template.html.indexOf("{{.Tracker}}") != -1) {
+    //         $("#use_tracker_checkbox").prop("checked", true)
+    //     } else {
+    //         $("#use_tracker_checkbox").prop("checked", false)
+    //     }
+
+    // } else {
+    //     $("#templateModalLabel").text("New Template")
+    // }
+    // // Handle Deletion
+    // $("#attachmentsTable").unbind('click').on("click", "span>i.fa-trash-o", function () {
+    //     attachmentsTable.row($(this).parents('tr'))
+    //         .remove()
+    //         .draw();
+    // })
+}
+
 function copy(idx) {
     $("#modalSubmit").unbind('click').click(function () {
         save(-1)
